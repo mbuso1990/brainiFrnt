@@ -1,39 +1,23 @@
 {
-  "expo": {
-    "name": "quizKids",
-    "slug": "quizKids",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./src/assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./src/assets/splash.png",
-      "backgroundColor": "#ffffff"
+  "cli": {
+    "version": ">= 9.0.7"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
     },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.quizkids",
-      "buildNumber": "1.0.0"
+    "preview": {
+      "distribution": "internal"
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./src/assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.yourname.quizkids",
-      "versionCode": 1
-    },
-    "web": {
-      "favicon": "./src/assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "840a055b-a3ce-43b7-964d-5fce589a5e80"
+    "production": {
+      "android": {
+        "buildType": "apk"
       }
-    },
-    "plugins": [
-      "expo-asset",
-      "expo-font"
-    ]
-  }
+    }
+  },
+  "submit": {
+    "production": {}
+  },
+  "image": "default"
 }
